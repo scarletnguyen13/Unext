@@ -1,0 +1,12 @@
+#items-container img {
+  opacity: 0.7;
+  border-style: solid;
+  border-color: white;
+  border-radius: 15px;
+}
+
+#items-container img:hover {
+  opacity: 1.0;
+  background-color: #9bc2ff;
+  border-radius: 15px;
+}

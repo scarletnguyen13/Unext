@@ -1,0 +1,35 @@
+#items-container {
+  width: 50%;
+  height: 50%;
+  background-color: #bad4ff;
+  padding: 8%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.container-fluid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 80%;
+  overflow-y: scroll;
+  height: 80%;
+  padding-right: 7%;
+}
+
+.row {
+  margin: 4.5% 0 4.5% 0;
+}
+
+.row:first-child {
+  margin-top: auto;
+}
