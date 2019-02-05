@@ -16,6 +16,7 @@ class Item extends Component {
         onClick={this.props.onClick}
         onKeyPress={() => {}}
         role="presentation"
+        id={this.props.id}
       />
     );
   }
@@ -23,6 +24,7 @@ class Item extends Component {
 
 Item.propTypes = {
   src: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
