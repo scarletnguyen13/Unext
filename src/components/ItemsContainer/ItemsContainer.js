@@ -22,19 +22,21 @@ class ItemsContainer extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
-    alert(this.state.items); // eslint-disable-line no-alert
+  handleClick(e) {
+    alert(`${`${this.state.items} --------------- ${e.target.id}`} ----------------- ${e.target.src}`); // eslint-disable-line no-alert
   }
 
   render() {
     let cols = [];
     const rows = mouths.map((src) => {
+      const id = ID();
       cols.push(
         <Col xs={7} sm={4} key={ID()}>
           <Item
             src={src}
             onClick={this.handleClick}
-            key={ID()}
+            key={id}
+            id={id}
           />
         </Col>,
       );

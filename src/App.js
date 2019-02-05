@@ -1,13 +1,11 @@
 import React from 'react';
-import AvatarContainer from './components/AvatarContainer/AvatarContainer';
-import ItemsContainer from './components/ItemsContainer/ItemsContainer';
 import './App.css';
+import AvatarMaker from './components/AvatarMaker/AvatarMaker';
 
 function App() {
   return (
     <div className="customized-row">
-      <AvatarContainer />
-      <ItemsContainer />
+      <AvatarMaker />
     </div>
   );
 }
